@@ -46,28 +46,6 @@ body {
   min-width: $mobile-width-min;
 }
 
-@media (min-width: $desktop-width-min) {
-  body {
-    background: url("../img/bg-desktop.png") no-repeat 50% 0;
-    background-size: 1366px auto;
-    min-height: 5889px;
-  }
-}
-
-@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
-  body {
-    background: url("../img/bg-tablet.png") no-repeat 50% 0;
-    background-size: 768px auto;
-  }
-}
-
-@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
-  body {
-    background: url("../img/bg-mobile.png") no-repeat 50% 0;
-    background-size: 320px auto;
-  }
-}
-
 .button {
   display: block;
   text-transform: uppercase;
@@ -85,6 +63,12 @@ body {
 }
 
 @media (min-width: $desktop-width) {
+  body {
+    background: url("../img/bg-desktop.png") no-repeat 50% 0;
+    background-size: 1366px auto;
+    min-height: 5889px;
+  }
+
   .container {
     margin: 0 auto;
     width: 1160px;
@@ -93,6 +77,11 @@ body {
 }
 
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  body {
+    background: url("../img/bg-tablet.png") no-repeat 50% 0;
+    background-size: 768px auto;
+  }
+
   .container {
     margin: 0 auto;
     padding: 0 45px;
@@ -100,6 +89,11 @@ body {
 }
 
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  body {
+    background: url("../img/bg-mobile.png") no-repeat 50% 0;
+    background-size: 320px auto;
+  }
+
   .container {
     margin: 0 auto;
     padding: 0 15px;
