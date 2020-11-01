@@ -8,8 +8,36 @@ html {
   box-sizing: inherit;
 }
 
-a {
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-roboto;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-dark-blue;
+  background-color: $color-white;
+  min-width: $mobile-width-min;
+}
+
+a:not(:first-child) {
+  color: inherit;
   text-decoration: none;
+
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.button {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
 
   &:focus,
   &:hover {
@@ -35,44 +63,11 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  font-family: $font-roboto;
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-dark-blue;
-  background-color: $color-white;
-  min-width: $mobile-width-min;
-}
-
-.button {
-  display: block;
-  text-transform: uppercase;
-  text-align: center;
-  box-sizing: border-box;
-
-  &:focus,
-  &:hover {
-    opacity: 0.5;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
-}
-
 @media (min-width: $desktop-width) {
   body {
     background: url("../img/bg-desktop.png") no-repeat 50% 0;
     background-size: 1366px auto;
     min-height: 5889px;
-  }
-
-  .container {
-    margin: 0 auto;
-    width: 1160px;
-    padding: 0 103px;
   }
 }
 
@@ -81,21 +76,11 @@ body {
     background: url("../img/bg-tablet.png") no-repeat 50% 0;
     background-size: 768px auto;
   }
-
-  .container {
-    margin: 0 auto;
-    padding: 0 45px;
-  }
 }
 
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   body {
     background: url("../img/bg-mobile.png") no-repeat 50% 0;
     background-size: 320px auto;
-  }
-
-  .container {
-    margin: 0 auto;
-    padding: 0 15px;
   }
 }
