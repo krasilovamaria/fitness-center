@@ -1,0 +1,107 @@
+.gym__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gym__wrapper-text {
+  width: 35.6%;
+  padding-top: 50px;
+  padding-left: 60px;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-family: $font-bebas-bold;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+  }
+
+  .gym__head {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .gym__text {
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    font-family: $font-roboto-light;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.gym__wrapper-video-and-img {
+  display: flex;
+  flex-direction: row;
+  width: 62.4%;
+}
+
+.gym__img {
+  position: relative;
+  margin-left: -300px;
+  z-index: -2;
+}
+
+.gym__wrap-video {
+  width: 364px;
+  height: 228px;
+  position: relative;
+  margin-top: 285px;
+  background-color: rgba(20, 54, 122, 0.5);
+
+  .gym__video {
+    position: relative;
+    z-index: -1;
+  }
+
+  .gym__video-button {
+    @include button-reset;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-image: url("../../img/video-button-desktop@1px.png");
+    background-repeat: no-repeat;
+    transition: 0.5s;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/video-button-desktop@2px.png") 100px 100px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .gym__container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 45px;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .gym__container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    flex-direction: column;
+  }
+}
