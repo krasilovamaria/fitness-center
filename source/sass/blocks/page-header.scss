@@ -1,5 +1,4 @@
 .page-header {
-  height: 658px;
   background-color: $color-red;
   background-image: url("../../img/bg-desktop@1px.png");
   background-size: 100% 100%;
@@ -13,6 +12,7 @@
 .page-header__container {
   max-width: 1160px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .page-header__container-logo-and-mobile {
@@ -154,7 +154,6 @@
 
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .page-header {
-    height: 554px;
     background-image: url("../../img/bg-tablet@1px.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -166,6 +165,7 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 45px;
+    padding-bottom: 75px;
   }
 
   .page-header__container-logo-and-mobile {
@@ -231,7 +231,6 @@
 
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .page-header {
-    height: 491px;
     background-image: url("../../img/bg-mobile@1px.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -243,6 +242,7 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    padding-bottom: 80px;
   }
 
   .page-header__container-logo-and-mobile {
