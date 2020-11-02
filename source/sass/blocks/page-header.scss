@@ -1,6 +1,13 @@
 .page-header {
   height: 658px;
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background-color: $color-red;
+  background-image: url("../../img/bg-desktop@1px.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-desktop@2x.png");
+  }
 }
 
 .page-header__container {
@@ -148,6 +155,11 @@
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .page-header {
     height: 554px;
+    background-image: url("../../img/bg-tablet@1px.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-tablet@2px.png");
+    }
   }
 
   .page-header__container {
@@ -220,6 +232,11 @@
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .page-header {
     height: 491px;
+    background-image: url("../../img/bg-mobile@1px.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-mobile@2px.png");
+    }
   }
 
   .page-header__container {
