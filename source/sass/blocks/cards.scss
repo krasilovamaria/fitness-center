@@ -1,8 +1,10 @@
 .cards {
   position: relative;
   background-color: $color-bg-grey;
+}
 
-  &::before {
+@media (min-width: $desktop-width) {
+  .cards::before {
     position: absolute;
     content: "";
     right: -2.5%;
@@ -283,5 +285,91 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    padding-top: 68px;
+    padding-bottom: 22px;
+  }
+
+  .cards__container-head-and-month {
+    margin-bottom: 44px;
+
+    h2 {
+      margin-bottom: 17px;
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    ul {
+      width: 290px;
+      height: 44px;
+
+      &::before {
+        width: 290px;
+      }
+    }
+
+    button {
+      height: 44px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .cards__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      width: 290px;
+      height: 384px;
+      margin-bottom: 35px;
+      padding-top: 40px;
+
+      &:hover,
+      &:focus {
+        background-image: url("../../img/border-card-mobile@1px.png");
+      }
+    }
+
+    li:hover > a,
+    li:focus > a {
+      background-image: url("../../img/button-cards-mobile@1px.png");
+    }
+
+    h3 {
+      margin: 0;
+      margin-bottom: 8px;
+      padding: 0;
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    .cards__info {
+      margin-bottom: 56px;
+    }
+  }
+
+  .cards__price {
+    margin-left: -30px;
+    margin-bottom: 28px;
+    font-size: 48px;
+    line-height: 72px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 33px;
+      top: 171px;
+      right: 77px;
+      background-image: url("../../img/ruble-mobile.svg");
+    }
+  }
+
+  .cards__with-trainer,
+  .cards__day,
+  .cards__full {
+    background-size: 175px 59px;
+    background-position: 53% 58%;
   }
 }
