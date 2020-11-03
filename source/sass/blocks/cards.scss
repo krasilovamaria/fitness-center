@@ -1,11 +1,27 @@
 .cards {
+  position: relative;
   background-color: $color-bg-grey;
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: -2.5%;
+    bottom: -3.5%;
+    width: 321px;
+    height: 500px;
+    background-image: url("../../img/bg-equipped-fitness-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-equipped-fitness-desktop@2px.png");
+    }
+  }
 }
 
 .cards__container {
   max-width: 1160px;
   margin: 0 auto;
   padding: 122px 0;
+  padding-bottom: 220px;
 }
 
 .cards__container-head-and-month {
@@ -54,7 +70,8 @@
     font-size: 20px;
     line-height: 30px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       padding-bottom: 10px;
       color: $color-dark-blue;
       border-bottom: 2px solid $color-border-hover;
@@ -63,20 +80,19 @@
 }
 
 .cards__wrapper {
-  ul {
-    @include list-reset;
-    max-width: 1160px;
-    width: 100%;
-    height: 448px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+  @include list-reset;
+  max-width: 1160px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   li {
     position: relative;
     width: 31.2%;
+    height: 448px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,9 +100,18 @@
     text-align: center;
     background-color: $color-white;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-image: url("../../img/border-card@1px.png");
     }
+  }
+
+  li:hover > a,
+  li:focus > a {
+    padding: 25px 0;
+    color: $color-white;
+    border: none;
+    background-image: url("../../img/button-cards-desktop@1px.png");
   }
 
   h3 {
@@ -105,6 +130,23 @@
     font-size: 16px;
     line-height: 24px;
     color: $color-light-blue;
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 205px;
+    height: 65px;
+    padding: 24px 0;
+    text-align: center;
+    font-family: $font-roboto-bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid $color-dark-blue;
+    cursor: pointer;
   }
 }
 
@@ -132,6 +174,7 @@
 }
 
 .cards__item {
+  min-width: 205px;
   display: flex;
   flex-direction: column;
 }
@@ -140,42 +183,21 @@
   background-image: url("../../img/5000.svg");
   background-size: 218px 75px;
   background-repeat: no-repeat;
-  background-position: 40% 45%;
+  background-position: 55% 64%;
 }
 
 .cards__day {
   background-image: url("../../img/1700.svg");
   background-size: 218px 75px;
   background-repeat: no-repeat;
-  background-position: 40% 45%;
+  background-position: 55% 64%;
 }
 
 .cards__full {
   background-image: url("../../img/2700.svg");
   background-size: 218px 75px;
   background-repeat: no-repeat;
-  background-position: 40% 45%;
-}
-
-.cards__wrapper a {
-  display: inline-block;
-  vertical-align: middle;
-  width: 205px;
-  height: 65px;
-  padding: 24px 0;
-  text-align: center;
-  font-family: $font-roboto-bold;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid $color-dark-blue;
-
-  &:hover {
-    color: $color-white;
-    background-image: url("../../img/button-cards@1px.png");
-  }
+  background-position: 55% 64%;
 }
 
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {

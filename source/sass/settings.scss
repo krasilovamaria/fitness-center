@@ -19,18 +19,9 @@ body {
   min-width: $mobile-width-min;
 }
 
-a:not(:first-child) {
+a {
   color: inherit;
   text-decoration: none;
-
-  &:focus,
-  &:hover {
-    opacity: 0.5;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
 }
 
 .button {
