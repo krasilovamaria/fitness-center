@@ -12,7 +12,7 @@
     background-image: url("../../img/bg-equipped-fitness-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bg-equipped-fitness-desktop@2px.png");
+      background-image: url("../../img/bg-equipped-fitness-desktop@2px.png") 321px 500px;
     }
   }
 }
@@ -21,7 +21,7 @@
   max-width: 1160px;
   margin: 0 auto;
   padding: 122px 0;
-  padding-bottom: 220px;
+  padding-bottom: 58px;
 }
 
 .cards__container-head-and-month {
@@ -102,7 +102,8 @@
 
     &:hover,
     &:focus {
-      background-image: url("../../img/border-card@1px.png");
+      background-image: url("../../img/border-card-desktop@1px.png");
+      background-repeat: no-repeat;
     }
   }
 
@@ -201,10 +202,79 @@
 }
 
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .cards::before {
+    position: absolute;
+    content: "";
+    right: -4.5%;
+    bottom: -1%;
+    width: 381px;
+    height: 500px;
+    background-image: url("../../img/bg-equipped-fitness-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-equipped-fitness-tablet@2x.png") 381px 500px;
+    }
+  }
+
   .cards__container {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 45px;
+    padding-top: 100px;
+    padding-bottom: 220px;
+  }
+
+  .cards__container-head-and-month {
+    margin-bottom: 44px;
+
+    h2 {
+      margin-bottom: 25px;
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    ul {
+      width: 332px;
+      height: 44px;
+
+      &::before {
+        width: 332px;
+      }
+    }
+
+    button {
+      height: 44px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  .cards__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      width: 442px;
+      margin-bottom: 40px;
+      padding-top: 64px;
+
+      &:hover,
+      &:focus {
+        background-image: url("../../img/border-card-tablet@1px.png");
+        background-position: 10% 10%;
+      }
+    }
+
+    li:hover > a,
+    li:focus > a {
+      background-image: url("../../img/button-cards-tablet@1px.png");
+    }
+  }
+
+  .cards__price::before {
+    top: 215px;
+    right: 138px;
   }
 }
 
