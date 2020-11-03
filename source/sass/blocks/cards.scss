@@ -1,0 +1,77 @@
+.cards {
+  background-color: $color-bg-grey;
+}
+
+.cards__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 122px 0;
+}
+
+.cards__container-head-and-month {
+  h2 {
+    margin: 0;
+    margin-bottom: 34px;
+    padding: 0;
+    font-family: $font-bebas-bold;
+    text-align: center;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  ul {
+    @include list-reset;
+    position: relative;
+    width: 342px;
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 342px;
+      height: 2px;
+      background-color: $color-border;
+    }
+  }
+
+  button {
+    @include button-reset;
+    display: inline-block;
+    vertical-align: middle;
+    height: 44px;
+    padding-bottom: 12px;
+    color: $color-font-light-blue;
+    font-size: 20px;
+    line-height: 30px;
+
+    &:hover {
+      padding-bottom: 10px;
+      color: $color-dark-blue;
+      border-bottom: 2px solid $color-border-hover;
+    }
+  }
+}
+
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .cards__container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 45px;
+  }
+}
+
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .cards__container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
