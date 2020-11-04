@@ -105,7 +105,6 @@
 
     &:hover,
     &:focus {
-      background-color: $color-red;
       background-image: url("../../img/border-card-desktop@1px.png");
       background-repeat: no-repeat;
     }
@@ -242,7 +241,7 @@
     margin: 0 auto;
     padding: 0 45px;
     padding-top: 100px;
-    padding-bottom: 220px;
+    padding-bottom: 60px;
   }
 
   .cards__container-head-and-month {
