@@ -101,9 +101,11 @@
     padding-top: 64px;
     text-align: center;
     background-color: $color-white;
+    outline-style: none;
 
     &:hover,
     &:focus {
+      background-color: $color-red;
       background-image: url("../../img/border-card-desktop@1px.png");
       background-repeat: no-repeat;
     }
@@ -114,6 +116,7 @@
     padding: 25px 0;
     color: $color-white;
     border: none;
+    background-color: $color-red;
     background-image: url("../../img/button-cards-desktop@1px.png");
   }
 
@@ -286,6 +289,7 @@
 
     li:hover > a,
     li:focus > a {
+      background-color: $color-red;
       background-image: url("../../img/button-cards-tablet@1px.png");
     }
   }
@@ -340,15 +344,18 @@
       height: 384px;
       margin-bottom: 35px;
       padding-top: 40px;
+      outline-style: none;
 
       &:hover,
       &:focus {
+        background-color: $color-red;
         background-image: url("../../img/border-card-mobile@1px.png");
       }
     }
 
     li:hover > a,
     li:focus > a {
+      background-color: $color-red;
       background-image: url("../../img/button-cards-mobile@1px.png");
     }
 
@@ -378,41 +385,25 @@
       height: 33px;
       top: 171px;
       right: 77px;
-      background-image: url("../../img/ruble-mobile@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/ruble-mobile@2x.png") 24px 33px;
-      }
+      background-image: url("../../img/ruble-mobile.png");
     }
   }
 
   .cards__with-trainer {
-    background-image: url("../../img/5000-mobile@1x.png");
+    background-image: url("../../img/5000-mobile.png");
     background-size: 175px 59px;
     background-position: 53% 58%;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/5000-mobile@2x.png") 175px 59px;
-    }
   }
 
   .cards__day {
-    background-image: url("../../img/1700-mobile@1x.png");
+    background-image: url("../../img/1700-mobile.png");
     background-size: 175px 59px;
     background-position: 53% 58%;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/1700-mobile@2x.png") 175px 59px;
-    }
   }
 
   .cards__full {
-    background-image: url("../../img/2700-mobile@1x.png");
+    background-image: url("../../img/2700-mobile.png");
     background-size: 175px 59px;
     background-position: 53% 58%;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/2700-mobile@2x.png") 175px 59px;
-    }
   }
 }
