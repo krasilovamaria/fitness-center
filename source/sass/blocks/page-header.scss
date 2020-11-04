@@ -135,14 +135,14 @@
   }
 
   li:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
   }
 
   a {
     display: inline-block;
     vertical-align: middle;
     width: 22px;
-    height: 11px;
+    height: 15px;
     text-align: right;
     font-size: 12px;
     line-height: 14px;
@@ -152,10 +152,14 @@
 
     &:focus,
     &:hover {
+      width: 22px;
+      height: 15px;
       opacity: 0.5;
     }
 
     &:active {
+      width: 22px;
+      height: 15px;
       opacity: 0.5;
     }
   }
