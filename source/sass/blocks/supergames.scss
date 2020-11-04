@@ -1,0 +1,140 @@
+.supergames {
+  background-color: $color-white;
+}
+
+.supergames__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 164px 0;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.supergames__wrapp-text {
+  width: 43.1%;
+  height: 500px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-white;
+  background-color: $color-red;
+
+  .supergames__crossfit {
+    margin: 0;
+    margin-bottom: 46px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 27px;
+    width: 345px;
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 58px;
+    padding: 25px 0;
+    width: 345px;
+    height: 70px;
+    font-family: $font-roboto-bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 4px solid $color-white;
+
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.supergames__wrap-head-and-date {
+  margin-bottom: 20px;
+  width: 345px;
+  height: 170px;
+  display: flex;
+  flex-direction: row;
+
+  h2 {
+    margin: 0;
+    margin-right: 46px;
+    padding: 0;
+    padding-top: 6px;
+    width: 205px;
+    font-family: $font-bebas-bold;
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: 0.03em;
+  }
+
+  ul {
+    @include list-reset;
+  }
+
+  li {
+    margin-bottom: 22px;
+  }
+
+  .supergames__table-text {
+    position: relative;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .supergames__table-text--date::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 64px;
+    height: 1px;
+    background-color: $color-white;
+  }
+
+  .supergames__table-text--time::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 88px;
+    height: 1px;
+    background-color: $color-white;
+  }
+
+  .supergames__table-num {
+    margin: 0;
+    padding: 0;
+    height: 52px;
+    font-family: $font-roboto-bold;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .supergames__table-info {
+    margin: 0;
+    margin-top: -48px;
+    margin-left: 28px;
+    padding: 0;
+    width: 45px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.supergames__img {
+  width: 56.9%;
+  height: 500px;
+  color: $color-white;
+  background-color: $color-bg-blue;
+}
