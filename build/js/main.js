@@ -1,35 +1,30 @@
 'use strict';
 
 $(document).ready(function () {
-  $('.slider-list__item').slick({
+  $('.multiple-items').slick({
+    arrows: true,
     infinite: true,
-    responsive: [{
-
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4,
-        infinite: true,
-        // prevArrow: "<class='.trainers__button--left' alt='1'>",
-        // nextArrow: "<class='.trainers__button--right' alt='2'>"
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    speed: 1000,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
       }
-
-    }, {
-
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        dots: true
-      }
-
-    }, {
-
-      breakpoint: 320,
-      settings: {
-        slidesToShow: 1,
-        dots: true
-      }
-
-    }]
+    ]
   });
 });
 
