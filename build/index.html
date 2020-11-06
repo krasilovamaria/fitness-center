@@ -109,7 +109,7 @@
         </div>
       </div>
     </section>
-    <section class="page__main-cards cards">
+    <section class="page-main__cards cards">
       <div class="cards__container">
         <div class="cards__container-head-and-month">
           <h2>Абонементы</h2>
@@ -313,7 +313,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="page-main__advantages advantages">
       <div class="advantages__container">
         <h2>Наши преимущества</h2>
         <div class="advantages__wrapper-center">
@@ -321,27 +321,27 @@
           <p class="advantages__card-text">Тренажеров</p>
           <p class="advantages__card-info">Современные тренажеры на все группы мышц</p>
         </div>
-        <ul>
-          <li>
-            <div class="advantages__wrap-num">
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--one">
+            <div class="advantages__wrap-num advantages__wrap-num--one">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/900@1px.webp 1x, img/900@2px.webp 2x">
+                <source type="image/webp" media="(min-width: 320px) and (max-width: 1199px)" srcset="img/900@1px.webp 1x, img/900@2px.webp 2x">
                 <source type="image/webp" srcset="img/900-desktop@1px.webp 1x, img/900-desktop@2px.webp 2x">
 
                 <!-- 1x: 84px; 2x: 166px-->
-                <source media="(min-width: 768px)" srcset="img/900@1px.png 1x, img/900@2px.png 2x">
+                <source media="(min-width: 320px) and (max-width: 1199px)" srcset="img/900@1px.png 1x, img/900@2px.png 2x">
 
                 <img src="img/900-desktop@1px.png" srcset="img/900-desktop@2px.jpg 2x" width="102" height="53" alt="Площадь спортзала 900кв.м">
               </picture>
               <p>кв/м</p>
             </div>
-            <div class="advantages__wrap-text">
+            <div class="advantages__wrap-text advantages__wrap-text--one">
               <h4>Площадь</h4>
               <p>Занимайтесь без очередей и толпучки</p>
             </div>
           </li>
-          <li class="advantages__card-order">
-            <div class="advantages__wrap-num">
+          <li class="advantages__item advantages__item--two">
+            <div class="advantages__wrap-num advantages__wrap-num--two">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/350@1px.webp 1x, img/350@2px.webp 2x">
                 <source type="image/webp" srcset="img/900-desktop@1px.webp 1x, img/350-desktop@2px.webp 2x">
@@ -358,7 +358,7 @@
               <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
             </div>
           </li>
-          <li>
+          <li class="advantages__item advantages__item--three">
             <div class="advantages__wrap-num">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/70@1px.webp 1x, img/70@2px.webp 2x">
@@ -376,7 +376,7 @@
               <p>Вы всегда найдете место для своей машины на нашей парковке</p>
             </div>
           </li>
-          <li>
+          <li class="advantages__item advantages__item--four">
             <div class="advantages__wrap-num">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/5@1px.webp 1x, img/5@2px.webp 2x">
@@ -390,7 +390,7 @@
               <p>лет</p>
             </div>
             <div class="advantages__wrap-text">
-              <h4>Треннерский опыт</h4>
+              <h4>Тренерский опыт</h4>
               <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
             </div>
           </li>

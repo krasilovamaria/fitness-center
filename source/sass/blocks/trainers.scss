@@ -1,6 +1,6 @@
-// .trainers {
-//   background-color: $color-white;
-// }
+.trainers {
+  background-color: $color-white;
+}
 
 .trainers__container {
   max-width: 1160px;
@@ -142,4 +142,46 @@
   border-top: 1px solid $color-arrow;
   border-right: 1px solid $color-arrow;
   transform: rotate(45deg);
+}
+
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .trainers__container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 45px;
+    padding-bottom: 80px;
+
+    h2 {
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 42px;
+      line-height: 42px;
+    }
+  }
+
+  .slider {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .trainers__container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 15px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 43px;
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  .slider {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
