@@ -1,0 +1,106 @@
+// .comments {
+//   width: 100%;
+//   background-color: $color-white;
+// }
+
+.comments__container {
+  min-width: 0;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 40px 0;
+  padding-bottom: 120px;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    font-family: $font-bebas-bold;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+  }
+}
+
+.comments__slider {
+  position: relative;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.comments__slider-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 50px 60px;
+  padding-top: 55px;
+  width: 560px;
+  height: 242px;
+  display: flex;
+  color: $color-white;
+  background-color: $color-bg-blue;
+
+  img {
+    margin-top: 5px;
+    margin-right: 30px;
+  }
+}
+
+.comments__wrap {
+  width: 330px;
+  text-align: left;
+}
+
+.comments__name {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: $font-roboto-bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.comments__text {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.comments__slider .slick-list {
+  overflow: hidden;
+  width: 560px;
+}
+
+.comments__slider .slick-track {
+  display: flex;
+  height: 242px;
+}
+
+.comments__slider .slick-arrow {
+  @include button-reset;
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  font-size: 0;
+}
+
+.comments__slider .slick-prev {
+  left: 21.5%;
+  width: 24px;
+  height: 24px;
+  border-top: 1px solid $color-arrow;
+  border-right: 1px solid $color-arrow;
+  transform: rotate(-135deg);
+}
+
+.comments__slider .slick-next {
+  right: 21.5%;
+  width: 24px;
+  height: 24px;
+  border-top: 1px solid $color-arrow;
+  border-right: 1px solid $color-arrow;
+  transform: rotate(45deg);
+}
+

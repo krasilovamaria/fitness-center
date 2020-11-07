@@ -26,5 +26,12 @@ $(document).ready(function () {
       }
     ]
   });
+  $('.comments__slider').slick({
+    arrows: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000
+  });
 });
 
