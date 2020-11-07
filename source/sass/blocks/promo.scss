@@ -1,0 +1,291 @@
+.promo {
+  width: 100%;
+  background-color: $color-white;
+}
+
+.promo__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    font-family: $font-bebas-bold;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: $font-roboto-bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color-dark-blue;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.promo__wrapper {
+  height: 462px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo__wrap-img-and-text {
+  width: 560px;
+  display: flex;
+  flex-direction: row;
+}
+
+.promo__card {
+  padding: 35px 45px;
+  width: 280px;
+  text-align: left;
+  color: $color-white;
+  background-color: $color-red;
+
+  .promo__card-year {
+    margin: 0;
+    padding: 0;
+    font-family: $font-roboto-bold;
+    font-size: 28px;
+    line-height: 44px;
+  }
+
+  .promo__card-price {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: $font-roboto-bold;
+    font-size: 70px;
+    line-height: 60px;
+  }
+
+  .promo__card-text {
+    margin: 0;
+    margin-bottom: 188px;
+    padding: 0;
+    width: 189px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 16px;
+    border-bottom: 1px solid $color-white;
+  }
+}
+
+.promo__list {
+  @include list-reset;
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+
+  li {
+    padding: 30px 35px;
+    width: 560px;
+    height: 211px;
+    background-color: $color-white;
+    background-image: url("../../img/border-promo-desktop@1px.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/border-promo-desktop@2px.png") 560px 211px;
+    }
+  }
+
+  h4 {
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    font-family: $font-roboto-bold;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 68px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .promo__container {
+    max-width: 100%;
+    padding: 20px 45px;
+    padding-top: 100px;
+
+    h2 {
+      margin-bottom: 40px;
+      font-size: 42px;
+      line-height: 42px;
+    }
+  }
+
+  .promo__wrapper {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .promo__wrap-img-and-text {
+    width: 100%;
+    height: 462px;
+    margin-bottom: 30px;
+  }
+
+  .promo__card {
+    padding: 35px 45px;
+    width: 100%;
+
+    .promo__card-text {
+      min-width: 189px;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .promo__img {
+    img {
+      width: 399px;
+      height: 462px;
+    }
+  }
+
+  .promo__list {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+
+    li {
+      padding: 30px 35px;
+      width: 324px;
+      height: 211px;
+      background-color: $color-white;
+      background-image: url("../../img/border-promo-tablet@1px.png");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/border-promo-tablet@2px.png") 324px 211px;
+      }
+    }
+
+    .promo__list-friends {
+      margin-bottom: 45px;
+      width: 153px;
+    }
+  }
+}
+
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .promo__container {
+    max-width: 100%;
+    padding: 0 15px;
+    padding-top: 70px;
+
+    h2 {
+      margin-bottom: 40px;
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  .promo__wrapper {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo__card {
+    padding: 35px 15px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .promo__card-text {
+      width: 195px;
+      max-width: 100%;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+
+  .promo__wrap-img-and-text {
+    width: 290px;
+    height: 598px;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+
+  .promo__img {
+    height: 299px;
+    width: 290px;
+
+    img {
+      width: 290px;
+      height: 299px;
+      object-fit: cover;
+    }
+  }
+
+  .promo__list {
+    width: 100%;
+    align-items: center;
+
+    h4 {
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 30px;
+      padding: 40px 35px;
+      width: 290px;
+      height: 211px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $color-white;
+      background-image: url("../../img/border-promo-mobile@1px.png");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/border-promo-mobile@2px.png") 580px 422px;
+      }
+    }
+
+    .promo__list-friends {
+      margin-bottom: 28px;
+    }
+
+    .promo__list-discount {
+      margin-bottom: 28px;
+      width: 160px;
+    }
+  }
+}
