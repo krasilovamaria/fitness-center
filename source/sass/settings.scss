@@ -17,6 +17,7 @@ body {
   color: $color-dark-blue;
   background-color: $color-white;
   min-width: $mobile-width-min;
+  overflow-x: hidden;
 }
 
 a {
