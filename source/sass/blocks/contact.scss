@@ -159,6 +159,13 @@
     font-size: 14px;
     line-height: 21px;
   }
+
+  a {
+    color: $color-dark-blue;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
@@ -231,6 +238,11 @@
     }
 
     p {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    a {
       font-size: 18px;
       line-height: 27px;
     }
@@ -328,6 +340,11 @@
     }
 
     p {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    a {
       font-size: 18px;
       line-height: 27px;
     }
