@@ -1,0 +1,162 @@
+.contact {
+  width: 100%;
+  display: flex;
+}
+
+.contact__form-wrap {
+  width: 50%;
+  color: $color-white;
+  background-color: $color-dark-blue;
+
+  form {
+    padding-top: 63px;
+    padding-right: 170px;
+    padding-bottom: 68px;
+    width: 580px;
+    margin-left: auto;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 34px;
+    padding: 0;
+    font-family: $font-bebas-bold;
+    font-size: 49px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+  }
+
+  .form__input-wrap {
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input[type="text"] {
+    padding-left: 0;
+    padding-bottom: 8px;
+    width: 190px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-white;
+    border: 0;
+    border-bottom: 1px solid $color-border-contact;
+    background: transparent;
+    outline: none;
+
+    &::placeholder {
+      color: $color-white;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  button {
+    @include button-reset;
+    width: 410px;
+    height: 52px;
+    font-family: $font-roboto-bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 3px solid $color-white;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.contact__contacts-wrap {
+  width: 50%;
+  background-color: $color-white;
+  border-top: 1px solid $color-border-contact;
+
+  .contacts {
+    padding-top: 63px;
+    padding-left: 120px;
+    margin-right: auto;
+  }
+
+  .contacts__head {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-family: $font-bebas-bold;
+    font-size: 49px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+  }
+
+  ul {
+    @include list-reset;
+    position: relative;
+    width: 470px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 5%;
+      left: 49%;
+      width: 1px;
+      height: 102px;
+      background-color: $color-border-contact;
+    }
+  }
+
+  li {
+    margin-bottom: 16px;
+    width: 180px;
+  }
+
+  .contacts__item {
+    &--one {
+      order: 1;
+    }
+
+    &--two {
+      order: 3;
+    }
+
+    &--three {
+      order: 2;
+    }
+
+    &--four {
+      order: 4;
+    }
+  }
+
+  .contacts__head-item {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-family: $font-roboto-bold;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
