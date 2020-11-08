@@ -1,6 +1,6 @@
-.trainers {
-  background-color: $color-white;
-}
+// .trainers {
+//   background-color: $color-white;
+// }
 
 .trainers__container {
   max-width: 1160px;
@@ -116,6 +116,7 @@
 
 .slider .slick-track {
   display: flex;
+  justify-content: space-between;
 }
 
 .slider .slick-arrow {
