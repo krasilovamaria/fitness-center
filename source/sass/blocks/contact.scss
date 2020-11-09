@@ -30,6 +30,7 @@
     margin-bottom: 28px;
     display: flex;
     justify-content: space-between;
+    color: $color-white;
   }
 
   input[type="text"] {
@@ -40,8 +41,9 @@
     line-height: 16px;
     color: $color-white;
     border: 0;
+    border-radius: none;
     border-bottom: 1px solid $color-border-contact;
-    background: transparent;
+    background-color: $color-dark-blue;
     outline: none;
 
     &::placeholder {
@@ -105,6 +107,7 @@
     @include list-reset;
     position: relative;
     width: 470px;
+    height: 100%;
     margin-left: 5px;
     display: flex;
     justify-content: space-between;
