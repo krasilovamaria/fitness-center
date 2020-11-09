@@ -162,8 +162,20 @@
   }
 
   .slider {
-    width: 569px;
+    width: 550px;
     margin: 0 auto;
+  }
+
+  .slider__wrap {
+    width: 268px;
+
+    img {
+      width: 268px;
+    }
+  }
+
+  .slider__overlay {
+    width: 268px;
   }
 
   .slider .slick-arrow {
@@ -208,6 +220,10 @@
 
   .slider__wrap {
     width: 230px;
+
+    img {
+      width: 230px;
+    }
   }
 
   .slider__overlay {
