@@ -119,6 +119,10 @@
   justify-content: space-between;
 }
 
+.slider .slick-active:not(:first-child) {
+  margin-left: 12px;
+}
+
 .slider .slick-arrow {
   @include button-reset;
   position: absolute;
@@ -162,20 +166,31 @@
   }
 
   .slider {
-    width: 550px;
+    width: 557px;
     margin: 0 auto;
   }
 
   .slider__wrap {
-    width: 268px;
+    width: 277px;
 
     img {
-      width: 268px;
+      width: 277px;
+      object-fit: cover;
     }
   }
 
   .slider__overlay {
-    width: 268px;
+    width: 277px;
+  }
+
+  .slider .slick-active:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .slider .slick-active:nth-child(odd) {
+    width: 277px;
+    margin-left: -20px;
+    margin-right: 25px;
   }
 
   .slider .slick-arrow {
@@ -183,13 +198,13 @@
   }
 
   .slider .slick-prev {
-    left: -9%;
+    left: -10%;
     width: 24px;
     height: 24px;
   }
 
   .slider .slick-next {
-    right: -9%;
+    right: -10%;
     width: 24px;
     height: 24px;
   }
@@ -237,6 +252,10 @@
   .trainers__container .slick-slider {
     width: 260px;
     margin: 0 auto;
+  }
+
+  .slider .slick-active:not(:first-child) {
+    margin-left: 0;
   }
 
   .slider .slick-arrow {
