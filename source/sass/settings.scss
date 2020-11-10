@@ -54,25 +54,3 @@ input[type="radio"].visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
 }
-
-@media (min-width: $desktop-width) {
-  body {
-    background: url("../img/bg-desktop.png") no-repeat 50% 0;
-    background-size: 1366px auto;
-    min-height: 5889px;
-  }
-}
-
-@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
-  body {
-    background: url("../img/bg-tablet.png") no-repeat 50% 0;
-    background-size: 768px auto;
-  }
-}
-
-@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
-  body {
-    background: url("../img/bg-mobile.png") no-repeat 50% 0;
-    background-size: 320px auto;
-  }
-}

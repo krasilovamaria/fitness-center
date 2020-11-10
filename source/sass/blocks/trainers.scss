@@ -215,7 +215,7 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 20px 15px;
-    padding-bottom: 10px;
+    padding-bottom: 90px;
     text-align: center;
 
     h2 {
@@ -233,16 +233,26 @@
     justify-content: center;
   }
 
+  .slider__item {
+    width: 230px;
+    height: 274px;
+    margin-right: 10px;
+  }
+
   .slider__wrap {
     width: 230px;
+    height: 274px;
 
     img {
       width: 230px;
+      height: 274px;
+      object-fit: cover;
     }
   }
 
   .slider__overlay {
     width: 230px;
+    height: 274px;
 
     ul {
       margin-left: 10px;
@@ -251,6 +261,7 @@
 
   .trainers__container .slick-slider {
     width: 260px;
+    height: 274px;
     margin: 0 auto;
   }
 
