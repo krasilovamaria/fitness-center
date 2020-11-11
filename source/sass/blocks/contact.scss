@@ -85,6 +85,7 @@
 .contact__contacts-wrap {
   width: 50%;
   height: 100%;
+  box-sizing: border-box;
   background-color: $color-white;
   border-top: 1px solid $color-border-contact;
 
@@ -110,6 +111,7 @@
     width: 470px;
     height: 100%;
     margin-left: 5px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
