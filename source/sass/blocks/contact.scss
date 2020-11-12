@@ -7,14 +7,14 @@
   width: 50%;
   color: $color-white;
   background-color: $color-dark-blue;
+}
 
-  form {
-    padding-top: 63px;
-    padding-right: 170px;
-    padding-bottom: 68px;
-    width: 580px;
-    margin-left: auto;
-  }
+form {
+  padding-top: 63px;
+  padding-right: 170px;
+  padding-bottom: 68px;
+  width: 580px;
+  margin-left: auto;
 
   h2 {
     margin: 0;
@@ -26,7 +26,7 @@
     letter-spacing: 0.03em;
   }
 
-  .form__input-wrap {
+  div {
     margin-bottom: 28px;
     display: flex;
     justify-content: space-between;
@@ -84,8 +84,6 @@
 
 .contact__contacts-wrap {
   width: 50%;
-  height: 100%;
-  box-sizing: border-box;
   background-color: $color-white;
   border-top: 1px solid $color-border-contact;
 
@@ -111,7 +109,6 @@
     width: 470px;
     height: 100%;
     margin-left: 5px;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -190,14 +187,14 @@
 
   .contact__form-wrap {
     width: 100%;
+  }
 
-    form {
-      padding: 0;
-      padding-top: 72px;
-      padding-right: 30px;
-      margin: 0 auto;
-      width: 501px;
-    }
+  form {
+    padding: 0;
+    padding-top: 72px;
+    padding-right: 30px;
+    margin: 0 auto;
+    width: 501px;
 
     h2 {
       margin-bottom: 34px;
@@ -271,13 +268,13 @@
 
   .contact__form-wrap {
     width: 100%;
+  }
 
-    form {
-      margin: 0 auto;
-      padding: 70px 15px 69px;
-      padding-bottom: 50px;
-      width: 100%;
-    }
+  form {
+    margin: 0 auto;
+    padding: 70px 15px 69px;
+    padding-bottom: 50px;
+    width: 100%;
 
     h2 {
       margin-bottom: 38px;
@@ -285,7 +282,7 @@
       line-height: 32px;
     }
 
-    .form__input-wrap {
+    div {
       margin-bottom: 7px;
       display: flex;
       flex-direction: column;

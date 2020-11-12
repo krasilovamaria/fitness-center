@@ -191,11 +191,11 @@
         background-image: url("../../img/border-promo-tablet@2px.png") 324px 211px;
       }
     }
+  }
 
-    .promo__list-friends {
-      margin-bottom: 45px;
-      width: 153px;
-    }
+  li:first-child p {
+    margin-bottom: 45px;
+    width: 153px;
   }
 }
 
@@ -278,15 +278,15 @@
         background-image: url("../../img/border-promo-mobile@2px.png") 580px 422px;
       }
     }
+  }
 
-    .promo__list-friends {
-      margin-bottom: 28px;
-      width: 154px;
-    }
+  li:first-child p {
+    margin-bottom: 28px;
+    width: 154px;
+  }
 
-    .promo__list-discount {
-      margin-bottom: 28px;
-      width: 160px;
-    }
+  li:not(:first-child) p {
+    margin-bottom: 28px;
+    width: 160px;
   }
 }

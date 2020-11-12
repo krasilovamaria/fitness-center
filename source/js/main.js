@@ -1,5 +1,11 @@
 'use strict';
 
+var slider = document.querySelector('.trainers');
+slider.classList.remove('trainers--nojs');
+
+var commentsSlider = document.querySelector('.comments');
+commentsSlider.classList.remove('comments--nojs');
+
 $(document).ready(function () {
   $('.multiple-items').slick({
     arrows: true,
@@ -36,13 +42,13 @@ $(document).ready(function () {
 });
 
 var linkNav = document.querySelectorAll('[href^="#"]');
-var V = 0.5;
+var rate = 0.5;
 for (var i = 0; i < linkNav.length; i++) {
   linkNav[i].addEventListener('click', function (e) {
     e.preventDefault();
-    var w = window.pageYOffset;
+    var heightScroll = window.pageYOffset;
     var hash = e.currentTarget.href.replace(/[^#]*(.*)/, '$1');
-    var t = document.querySelector(hash).getBoundingClientRect().top;
+    var position = document.querySelector(hash).getBoundingClientRect().top;
     var start = null;
     requestAnimationFrame(step);
     function step(time) {
@@ -50,9 +56,9 @@ for (var i = 0; i < linkNav.length; i++) {
         start = time;
       }
       var progress = time - start;
-      var r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
-      window.scrollTo(0, r);
-      if (r !== w + t) {
+      var resultPosition = (position < 0 ? Math.max(heightScroll - progress / rate, heightScroll + position) : Math.min(heightScroll + progress / rate, heightScroll + position));
+      window.scrollTo(0, resultPosition);
+      if (resultPosition !== heightScroll + position) {
         requestAnimationFrame(step);
       } else {
         location.hash = hash;
