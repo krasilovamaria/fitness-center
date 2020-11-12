@@ -30,7 +30,7 @@
   }
 
   .advantages__item {
-    margin-bottom: 154px;
+    margin-bottom: 120px;
     width: 34%;
     display: flex;
     flex-direction: row;
@@ -38,23 +38,27 @@
 
   .advantages__item--one {
     position: relative;
+    margin-bottom: 154px;
     padding-left: 24px;
     order: 1;
   }
 
   .advantages__item--two {
     padding-left: 24px;
+    margin-bottom: 120px;
     order: 3;
   }
 
   .advantages__item--three {
     position: relative;
+    margin-bottom: 154px;
     padding-left: 16px;
     order: 2;
   }
 
   .advantages__item--four {
     padding-left: 16px;
+    margin-bottom: 120px;
     order: 4;
   }
 }
@@ -145,7 +149,7 @@
     position: absolute;
     width: 242px;
     height: 307px;
-    top: 31.4%;
+    top: 33.4%;
     left: 39.5%;
   }
 

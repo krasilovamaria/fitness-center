@@ -7,6 +7,7 @@
   max-width: 1160px;
   margin: 0 auto;
   padding: 80px 0;
+  padding-top: 117px;
   text-align: center;
 
   h2 {
@@ -191,11 +192,11 @@
         background-image: url("../../img/border-promo-tablet@2px.png") 324px 211px;
       }
     }
-  }
 
-  li:first-child p {
-    margin-bottom: 45px;
-    width: 153px;
+    p:first-child {
+      margin-bottom: 45px;
+      width: 153px;
+    }
   }
 }
 
@@ -278,15 +279,15 @@
         background-image: url("../../img/border-promo-mobile@2px.png") 580px 422px;
       }
     }
-  }
 
-  li:first-child p {
-    margin-bottom: 28px;
-    width: 154px;
-  }
+    li:first-child p {
+      margin-bottom: 28px;
+      width: 154px;
+    }
 
-  li:not(:first-child) p {
-    margin-bottom: 28px;
-    width: 160px;
+    li:not(:first-child) p {
+      margin-bottom: 28px;
+      width: 160px;
+    }
   }
 }

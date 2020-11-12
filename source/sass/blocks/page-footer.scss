@@ -1,5 +1,6 @@
 .page-footer {
   padding: 45px 0;
+  padding-bottom: 35px;
   width: 100%;
   color: $color-white;
   background-color: $color-footer;
@@ -68,6 +69,10 @@
 }
 
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .page-footer {
+    padding-bottom: 38px;
+  }
+
   .page-footer__container {
     margin: 0 auto;
     max-width: 100%;
