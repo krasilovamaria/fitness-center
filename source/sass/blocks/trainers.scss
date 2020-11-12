@@ -150,10 +150,6 @@
   transform: rotate(45deg);
 }
 
-.trainers--nojs .multiple-items {
-  visibility: visible;
-}
-
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .trainers__container {
     max-width: 100%;
