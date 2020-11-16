@@ -1,6 +1,6 @@
 .comments {
   width: 100%;
-  background-color: $color-white;
+  // background-color: $color-white;
 }
 
 .comments__container {
@@ -8,7 +8,7 @@
   max-width: 1160px;
   margin: 0 auto;
   padding: 40px 0;
-  padding-bottom: 120px;
+  padding-bottom: 98px;
   text-align: center;
 
   h2 {
@@ -36,10 +36,9 @@
   padding: 50px 60px;
   padding-top: 55px;
   width: 560px;
-  height: 242px;
   display: flex;
   color: $color-white;
-  background-color: $color-bg-blue;
+  // background-color: $color-bg-blue;
 
   img {
     margin-top: 5px;
@@ -78,13 +77,14 @@
 
 .comments__slider .slick-track {
   display: flex;
-  height: 242px;
+  min-height: 242px;
+  height: 100%;
 }
 
 .comments__slider .slick-arrow {
   @include button-reset;
   position: absolute;
-  top: 45%;
+  top: 41%;
   z-index: 10;
   font-size: 0;
   outline: none;
@@ -122,8 +122,8 @@
   .comments__container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 80px 45px;
-    padding-bottom: 100px;
+    padding: 83px 45px;
+    padding-bottom: 78px;
 
     h2 {
       margin-bottom: 40px;
@@ -133,11 +133,29 @@
     }
   }
 
+  .comments__wrap {
+    span {
+      line-height: 32px;
+    }
+  }
+
+  .comments__slider-item {
+    padding-top: 53px;
+
+    img {
+      margin-top: 10px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
   .comments__slider .slick-prev {
+    top: 41%;
     left: 0.5%;
   }
 
   .comments__slider .slick-next {
+    top: 41%;
     right: 0.5%;
   }
 }

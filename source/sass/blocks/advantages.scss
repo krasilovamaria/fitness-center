@@ -10,7 +10,7 @@
 
   h2 {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
     padding: 0;
     text-align: center;
     font-family: $font-bebas-bold;
@@ -38,7 +38,7 @@
 
   .advantages__item--one {
     position: relative;
-    margin-bottom: 154px;
+    margin-bottom: 144px;
     padding-left: 24px;
     order: 1;
   }
@@ -51,7 +51,7 @@
 
   .advantages__item--three {
     position: relative;
-    margin-bottom: 154px;
+    margin-bottom: 146px;
     padding-left: 16px;
     order: 2;
   }
@@ -115,7 +115,7 @@
   }
 
   img {
-    margin-top: 2px;
+    margin-top: 8px;
   }
 }
 
@@ -157,7 +157,7 @@
     &::before {
       content: "";
       position: absolute;
-      bottom: -80px;
+      bottom: -77px;
       left: 0;
       width: 340px;
       height: 2px;
@@ -169,7 +169,7 @@
     &::before {
       content: "";
       position: absolute;
-      bottom: -80px;
+      bottom: -77px;
       right: 0;
       width: 340px;
       height: 2px;
@@ -206,7 +206,7 @@
 
     .advantages__item--one {
       padding-left: 0;
-      margin-bottom: 322px;
+      margin-bottom: 320px;
 
       img {
         width: 84px;
@@ -226,7 +226,7 @@
 
     .advantages__item--three {
       padding-left: 0;
-      margin-bottom: 322px;
+      margin-bottom: 320px;
       margin-left: calc(100% - 322px * 2);
 
       img {
@@ -277,6 +277,16 @@
 
   .advantages__wrap-num {
     margin-top: 5px;
+    margin-right: 32px;
+
+    img {
+      margin-top: 5px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 21px;
+    }
 
     &--one {
       margin-right: 32px;
@@ -287,7 +297,7 @@
     span {
       margin-bottom: 0;
       font-size: 20px;
-      line-height: 32px;
+      line-height: 33px;
     }
 
     p {
@@ -307,7 +317,7 @@
     padding-bottom: 50px;
 
     h2 {
-      margin-bottom: 48px;
+      margin-bottom: 42px;
       font-size: 32px;
       line-height: 32px;
     }
@@ -326,7 +336,7 @@
       align-items: center;
 
       &--one {
-        margin-bottom: 38px;
+        margin-bottom: 32px;
 
         img {
           margin-left: 4px;
@@ -336,7 +346,7 @@
       }
 
       &--two {
-        margin-bottom: 40px;
+        margin-bottom: 32px;
 
         img {
           width: 85px;
@@ -345,7 +355,7 @@
       }
 
       &--three {
-        margin-bottom: 327px;
+        margin-bottom: 320px;
 
         img {
           margin-left: 15px;
@@ -389,13 +399,32 @@
 
   .advantages__wrap-num {
     text-align: center;
-    margin-bottom: 4px;
+    margin-bottom: 9px;
 
     p {
       margin-left: 10px;
       text-align: center;
       font-size: 14px;
       line-height: 21px;
+    }
+
+    &--one p {
+      line-height: 15px;
+    }
+
+    &--three p {
+      margin-left: 20px;
+      line-height: 15px;
+    }
+
+    &--two p {
+      margin-left: 5px;
+      line-height: 18px;
+    }
+
+    &--four p {
+      margin-left: 18px;
+      line-height: 18px;
     }
   }
 
@@ -416,6 +445,10 @@
 
     &--comfort {
       width: 226px;
+    }
+
+    &--experience {
+      margin-left: -15px;
     }
   }
 }

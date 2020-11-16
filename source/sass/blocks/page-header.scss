@@ -41,6 +41,15 @@
       opacity: 0.3;
     }
   }
+
+  div {
+    width: 200px;
+    text-align: end;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .page-header__container-about {
@@ -191,7 +200,7 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 45px;
-    padding-bottom: 75px;
+    padding-bottom: 74px;
   }
 
   .page-header__container-logo-and-mobile {
@@ -205,6 +214,11 @@
 
     a:nth-child(2n) {
       letter-spacing: 0.02em;
+    }
+
+    img {
+      width: 80px;
+      height: 18px;
     }
   }
 
@@ -282,6 +296,11 @@
 
     a:nth-child(2n) {
       letter-spacing: 0.02em;
+    }
+
+    img {
+      width: 67px;
+      height: 16px;
     }
   }
 
