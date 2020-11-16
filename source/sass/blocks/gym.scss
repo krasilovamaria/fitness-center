@@ -82,12 +82,12 @@
     width: 100px;
     height: 100px;
     margin: auto;
-    background-image: url("../../img/video-button-desktop@1px.png");
+    background-image: url("../img/video-button-desktop@1px.png");
     background-repeat: no-repeat;
     transition: 0.5s;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/video-button-desktop@2px.png") 100px 100px;
+      background-image: url("../img/video-button-desktop@2px.png") 100px 100px;
     }
 
     &:hover {
@@ -187,12 +187,12 @@
       left: 0;
       width: 73px;
       height: 73px;
-      background-image: url("../../img/video-button-desktop@1px.png");
+      background-image: url("../img/video-button-desktop@1px.png");
       background-size: 73px 73px;
       transition: 0.5s;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/video-button-desktop@2px.png") 73px 73px;
+        background-image: url("../img/video-button-desktop@2px.png") 73px 73px;
       }
     }
   }
@@ -289,12 +289,12 @@
       left: 0;
       width: 73px;
       height: 73px;
-      background-image: url("../../img/video-button-desktop@1px.png");
+      background-image: url("../img/video-button-desktop@1px.png");
       background-size: 73px 73px;
       transition: 0.5s;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/video-button-desktop@2px.png") 73px 73px;
+        background-image: url("../img/video-button-desktop@2px.png") 73px 73px;
       }
     }
   }

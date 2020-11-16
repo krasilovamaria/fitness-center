@@ -11,10 +11,10 @@
     bottom: -24.5%;
     width: 321px;
     height: 500px;
-    background-image: url("../../img/bg-equipped-fitness-desktop@1x.png");
+    background-image: url("../img/bg-equipped-fitness-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bg-equipped-fitness-desktop@2px.png") 321px 500px;
+      background-image: url("../img/bg-equipped-fitness-desktop@2px.png") 321px 500px;
     }
   }
 }
@@ -107,7 +107,7 @@
 
     &:hover,
     &:focus {
-      background-image: url("../../img/border-card-desktop@1px.png");
+      background-image: url("../img/border-card-desktop@1px.png");
       background-repeat: no-repeat;
     }
   }
@@ -118,7 +118,7 @@
     color: $color-white;
     border: none;
     background-color: $color-red;
-    background-image: url("../../img/button-cards-desktop@1px.png");
+    background-image: url("../img/button-cards-desktop@1px.png");
   }
 
   h3 {
@@ -173,10 +173,10 @@
       height: 42px;
       top: 214px;
       right: 98px;
-      background-image: url("../../img/ruble@1x.png");
+      background-image: url("../img/ruble@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/ruble@2x.png") 30px 42px;
+        background-image: url("../img/ruble@2x.png") 30px 42px;
       }
     }
   }
@@ -189,35 +189,35 @@
 }
 
 .cards__with-trainer {
-  background-image: url("../../img/5000@1x.png");
+  background-image: url("../img/5000@1x.png");
   background-size: 203px 69px;
   background-repeat: no-repeat;
   background-position: 55% 62%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/5000@2x.png") 203px 69px;
+    background-image: url("../img/5000@2x.png") 203px 69px;
   }
 }
 
 .cards__day {
-  background-image: url("../../img/1700@1x.png");
+  background-image: url("../img/1700@1x.png");
   background-size: 203px 69px;
   background-repeat: no-repeat;
   background-position: 55% 62%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/1700@2x.png") 203px 69px;
+    background-image: url("../img/1700@2x.png") 203px 69px;
   }
 }
 
 .cards__full {
-  background-image: url("../../img/2700@1x.png");
+  background-image: url("../img/2700@1x.png");
   background-size: 203px 69px;
   background-repeat: no-repeat;
   background-position: 55% 62%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/2700@2x.png") 203px 69px;
+    background-image: url("../img/2700@2x.png") 203px 69px;
   }
 }
 
@@ -229,10 +229,10 @@
     bottom: -10%;
     width: 381px;
     height: 500px;
-    background-image: url("../../img/bg-equipped-fitness-tablet@1x.png");
+    background-image: url("../img/bg-equipped-fitness-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bg-equipped-fitness-tablet@2x.png") 381px 500px;
+      background-image: url("../img/bg-equipped-fitness-tablet@2x.png") 381px 500px;
     }
   }
 
@@ -281,7 +281,7 @@
 
       &:hover,
       &:focus {
-        background-image: url("../../img/border-card-tablet@1px.png");
+        background-image: url("../img/border-card-tablet@1px.png");
         background-position: 10% 10%;
       }
     }
@@ -289,7 +289,7 @@
     li:hover > a,
     li:focus > a {
       background-color: $color-red;
-      background-image: url("../../img/button-cards-tablet@1px.png");
+      background-image: url("../img/button-cards-tablet@1px.png");
     }
 
     span::before {
@@ -347,14 +347,14 @@
 
       &:hover,
       &:focus {
-        background-image: url("../../img/border-card-mobile@1px.png");
+        background-image: url("../img/border-card-mobile@1px.png");
       }
     }
 
     li:hover > a,
     li:focus > a {
       background-color: $color-red;
-      background-image: url("../../img/button-cards-mobile@1px.png");
+      background-image: url("../img/button-cards-mobile@1px.png");
     }
 
     h3 {
@@ -382,25 +382,25 @@
         height: 33px;
         top: 171px;
         right: 77px;
-        background-image: url("../../img/ruble-mobile.png");
+        background-image: url("../img/ruble-mobile.png");
       }
     }
   }
 
   .cards__with-trainer {
-    background-image: url("../../img/5000-mobile.png");
+    background-image: url("../img/5000-mobile.png");
     background-size: 175px 59px;
     background-position: 53% 58%;
   }
 
   .cards__day {
-    background-image: url("../../img/1700-mobile.png");
+    background-image: url("../img/1700-mobile.png");
     background-size: 175px 59px;
     background-position: 53% 58%;
   }
 
   .cards__full {
-    background-image: url("../../img/2700-mobile.png");
+    background-image: url("../img/2700-mobile.png");
     background-size: 175px 59px;
     background-position: 53% 58%;
   }
