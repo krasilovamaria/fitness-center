@@ -21,7 +21,20 @@
       <div class="page-header__container">
 
         <div class="page-header__container-logo-and-mobile">
-          <a aria-label="Логотип фитнес центра">Supergym</a>
+          <a aria-label="Логотип фитнес центра">
+            <picture>
+              <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/logo-mobile@1x.webp 1x, img/logo-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/logo-tablet@1x.webp 1x, img/logo-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-desktop@1x.webp 1x, img/logo-desktop@2x.webp 2x">
+
+              <!-- 1x: 67px; 2x: 134px-->
+              <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/logo-mobile@1x.png 1x, img/logo-mobile@2x.png 2x">
+              <!-- 1x: 80px; 2x: 159px-->
+              <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/logo-tablet@1x.png 1x, img/logo-tablet@2x.png 2x">
+
+              <img src="img/logo-desktop@1x.png" srcset="img/logo-desktop@2x.png 2x" width="87" height="20" alt="Логотип Supergym">
+            </picture>
+          </a>
           <a href="tel:+78005555555" aria-label="Телефон фитнес центра 8-800-555-55-55">8-800-555-55-55</a>
         </div>
 
@@ -91,9 +104,7 @@
           <div class="gym__wrapper-video-and-img">
             <div class="gym__wrap-video">
               <span class="gym__video-overlay"></span>
-              <video class="gym__video" width="364" height="228" poster="img/video-gym-desktop@1x.jpg">
-                <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
-              </video>
+              <video class="gym__video" width="364" height="228" poster="img/video-gym-desktop@1x.jpg"></video>
               <button class="gym__video-button" type="button" aria-label="Кнопка воспроизведения видео"></button>
             </div>
             <picture>
@@ -193,7 +204,18 @@
           <div class="slider multiple-items">
             <div class="slider__item" tabindex="0">
               <aside class="slider__wrap">
-                <img src="img/trainer-photo-1.jpg" width="260" height="294" alt="Анна Павлова - CrossFit">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1x.webp 1x, img/trainer-photo-3-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-3-tablet@1x.webp 1x, img/trainer-photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/trainer-photo-1-desktop@1x.webp 1x, img/trainer-photo-1-desktop@2x.webp 2x">
+
+                  <!-- 1x: 226px; 2x: 452px-->
+                  <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1px.jpg 1x, img/trainer-photo-3-mobile@2px.jpg 2x">
+                  <!-- 1x: 268px; 2x: 536px-->
+                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-3-tablet@1px.jpg 1x, img/trainer-photo-3-tablet@2px.jpg 2x">
+
+                  <img src="img/trainer-photo-1-desktop@1px.jpg" srcset="img/trainer-photo-1-desktop@2px.jpg 2x" width="260" height="294" alt="Анна Павлова - CrossFit">
+                </picture>
                 <h3 class="slider__name">Анна Павлова</h3>
                 <aside class="slider__overlay">
                   <p>Анна Павлова</p>
@@ -208,7 +230,18 @@
             </div>
             <div class="slider__item" tabindex="0">
               <aside class="slider__wrap">
-                <img src="img/trainer-photo-2.jpg" width="260" height="294" alt="Алексей Лавров - CrossFit">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1x.webp 1x, img/trainer-photo-3-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-3-tablet@1x.webp 1x, img/trainer-photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/trainer-photo-2-desktop@1x.webp 1x, img/trainer-photo-2-desktop@2x.webp 2x">
+
+                  <!-- 1x: 226px; 2x: 452px-->
+                  <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1px.jpg 1x, img/trainer-photo-3-mobile@2px.jpg 2x">
+                  <!-- 1x: 268px; 2x: 536px-->
+                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-3-tablet@1px.jpg 1x, img/trainer-photo-3-tablet@2px.jpg 2x">
+
+                  <img src="img/trainer-photo-2-desktop@1px.jpg" srcset="img/trainer-photo-2-desktop@2px.jpg 2x" width="260" height="294" alt="Алексей Лавров - CrossFit">
+                </picture>
                 <h3 class="slider__name">Алексей Лавров</h3>
                 <aside class="slider__overlay">
                   <p>Алексей Лавров</p>
@@ -223,7 +256,18 @@
             </div>
             <div class="slider__item" tabindex="0">
               <aside class="slider__wrap">
-                <img src="img/trainer-photo-3.jpg" width="260" height="294" alt="Александр Пашков - CrossFit">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1x.webp 1x, img/trainer-photo-3-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-3-tablet@1x.webp 1x, img/trainer-photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/trainer-photo-3-desktop@1x.webp 1x, img/trainer-photo-3-desktop@2x.webp 2x">
+
+                  <!-- 1x: 226px; 2x: 452px-->
+                  <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1px.jpg 1x, img/trainer-photo-3-mobile@2px.jpg 2x">
+                  <!-- 1x: 268px; 2x: 536px-->
+                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-3-tablet@1px.jpg 1x, img/trainer-photo-3-tablet@2px.jpg 2x">
+
+                  <img src="img/trainer-photo-3-desktop@1px.jpg" srcset="img/trainer-photo-3-desktop@2px.jpg 2x" width="260" height="294" alt="Александр Пашков - CrossFit">
+                </picture>
                 <h3 class="slider__name">Александр Пашков</h3>
                 <aside class="slider__overlay">
                   <p>Александр Пашков</p>
@@ -238,7 +282,18 @@
             </div>
             <div class="slider__item" tabindex="0">
               <aside class="slider__wrap">
-                <img src="img/trainer-photo-4.jpg" width="260" height="294" alt="Мария Кетова - CrossFit">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1x.webp 1x, img/trainer-photo-3-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-4-tablet@1x.webp 1x, img/trainer-photo-4-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/trainer-photo-4-desktop@1x.webp 1x, img/trainer-photo-4-desktop@2x.webp 2x">
+
+                  <!-- 1x: 226px; 2x: 452px-->
+                  <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1px.jpg 1x, img/trainer-photo-3-mobile@2px.jpg 2x">
+                  <!-- 1x: 268px; 2x: 536px-->
+                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-4-tablet@1px.jpg 1x, img/trainer-photo-4-tablet@2px.jpg 2x">
+
+                  <img src="img/trainer-photo-4-desktop@1px.jpg" srcset="img/trainer-photo-4-desktop@2px.jpg 2x" width="260" height="294" alt="Мария Кетова - CrossFit">
+                </picture>
                 <h3 class="slider__name">Мария Кетова</h3>
                 <aside class="slider__overlay">
                   <p>Мария Кетова</p>
@@ -253,7 +308,18 @@
             </div>
             <div class="slider__item" tabindex="0">
               <aside class="slider__wrap">
-                <img src="img/trainer-photo-1.jpg" width="260" height="294" alt="Анна Павлова - CrossFit">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1x.webp 1x, img/trainer-photo-3-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-3-tablet@1x.webp 1x, img/trainer-photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/trainer-photo-1-desktop@1x.webp 1x, img/trainer-photo-1-desktop@2x.webp 2x">
+
+                  <!-- 1x: 226px; 2x: 452px-->
+                  <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1px.jpg 1x, img/trainer-photo-3-mobile@2px.jpg 2x">
+                  <!-- 1x: 268px; 2x: 536px-->
+                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-3-tablet@1px.jpg 1x, img/trainer-photo-3-tablet@2px.jpg 2x">
+
+                  <img src="img/trainer-photo-1-desktop@1px.jpg" srcset="img/trainer-photo-1-desktop@2px.jpg 2x" width="260" height="294" alt="Анна Павлова - CrossFit">
+                </picture>
                 <h3 class="slider__name">Анна Павлова</h3>
                 <aside class="slider__overlay">
                   <p>Анна Павлова</p>
@@ -268,7 +334,18 @@
             </div>
             <div class="slider__item" tabindex="0">
               <aside class="slider__wrap">
-                <img src="img/trainer-photo-2.jpg" width="260" height="294" alt="Алексей Лавров - CrossFit">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1x.webp 1x, img/trainer-photo-3-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-3-tablet@1x.webp 1x, img/trainer-photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/trainer-photo-2-desktop@1x.webp 1x, img/trainer-photo-2-desktop@2x.webp 2x">
+
+                  <!-- 1x: 226px; 2x: 452px-->
+                  <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1px.jpg 1x, img/trainer-photo-3-mobile@2px.jpg 2x">
+                  <!-- 1x: 268px; 2x: 536px-->
+                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-3-tablet@1px.jpg 1x, img/trainer-photo-3-tablet@2px.jpg 2x">
+
+                  <img src="img/trainer-photo-2-desktop@1px.jpg" srcset="img/trainer-photo-2-desktop@2px.jpg 2x" width="260" height="294" alt="Алексей Лавров - CrossFit">
+                </picture>
                 <h3 class="slider__name">Алексей Лавров</h3>
                 <aside class="slider__overlay">
                   <p>Алексей Лавров</p>
@@ -283,7 +360,18 @@
             </div>
             <div class="slider__item" tabindex="0">
               <aside class="slider__wrap">
-                <img src="img/trainer-photo-3.jpg" width="260" height="294" alt="Александр Пашков - CrossFit">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1x.webp 1x, img/trainer-photo-3-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-3-tablet@1x.webp 1x, img/trainer-photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/trainer-photo-3-desktop@1x.webp 1x, img/trainer-photo-3-desktop@2x.webp 2x">
+
+                  <!-- 1x: 226px; 2x: 452px-->
+                  <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1px.jpg 1x, img/trainer-photo-3-mobile@2px.jpg 2x">
+                  <!-- 1x: 268px; 2x: 536px-->
+                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-3-tablet@1px.jpg 1x, img/trainer-photo-3-tablet@2px.jpg 2x">
+
+                  <img src="img/trainer-photo-3-desktop@1px.jpg" srcset="img/trainer-photo-3-desktop@2px.jpg 2x" width="260" height="294" alt="Александр Пашков - CrossFit">
+                </picture>
                 <h3 class="slider__name">Александр Пашков</h3>
                 <aside class="slider__overlay">
                   <p>Александр Пашков</p>
@@ -298,7 +386,18 @@
             </div>
             <div class="slider__item" tabindex="0">
               <aside class="slider__wrap">
-                <img src="img/trainer-photo-4.jpg" width="260" height="294" alt="Мария Кетова - CrossFit">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1x.webp 1x, img/trainer-photo-3-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-4-tablet@1x.webp 1x, img/trainer-photo-4-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/trainer-photo-4-desktop@1x.webp 1x, img/trainer-photo-4-desktop@2x.webp 2x">
+
+                  <!-- 1x: 226px; 2x: 452px-->
+                  <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/trainer-photo-3-mobile@1px.jpg 1x, img/trainer-photo-3-mobile@2px.jpg 2x">
+                  <!-- 1x: 268px; 2x: 536px-->
+                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/trainer-photo-4-tablet@1px.jpg 1x, img/trainer-photo-4-tablet@2px.jpg 2x">
+
+                  <img src="img/trainer-photo-4-desktop@1px.jpg" srcset="img/trainer-photo-4-desktop@2px.jpg 2x" width="260" height="294" alt="Мария Кетова - CrossFit">
+                </picture>
                 <h3 class="slider__name">Мария Кетова</h3>
                 <aside class="slider__overlay">
                   <p>Мария Кетова</p>
@@ -448,7 +547,18 @@
           <div class="comments__slider multiple-comments">
             <div class="comments__item" tabindex="0">
               <aside class="comments__slider-item">
-                <img src="img/photo-client-1-desktop@1px.png" alt="Фотография клиента" width="80" height="80">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/photo-client-1-mobile@1x.webp 1x, img/photo-client-1-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/photo-client-1-tablet@1x.webp 1x, img/photo-client-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-client-1-desktop@1x.webp 1x, img/photo-client-1-desktop@2x.webp 2x">
+
+                  <!-- 1x: 68px; 2x: 136px-->
+                  <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/photo-client-1-mobile@1px.png 1x, img/photo-client-1-mobile@2px.png 2x">
+                  <!-- 1x: 80px; 2x: 160px-->
+                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/photo-client-1-tablet@1px.png 1x, img/photo-client-1-desktop@2px.png 2x">
+
+                  <img src="img/photo-client-1-desktop@1px.png" srcset="img/photo-client-1-desktop@2px.png 2x" alt="Фотография клиента" width="80" height="80">
+                </picture>
                 <aside class="comments__wrap">
                   <span>Анна Орлова</span>
                   <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто,
@@ -459,7 +569,18 @@
             </div>
             <div class="comments__item" tabindex="0">
               <aside class="comments__slider-item">
-                <img src="img/photo-client-1-desktop@1px.png" alt="Фотография клиента" width="80" height="80">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/photo-client-1-mobile@1x.webp 1x, img/photo-client-1-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/photo-client-1-tablet@1x.webp 1x, img/photo-client-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-client-1-desktop@1x.webp 1x, img/photo-client-1-desktop@2x.webp 2x">
+
+                  <!-- 1x: 68px; 2x: 136px-->
+                  <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/photo-client-1-mobile@1px.png 1x, img/photo-client-1-mobile@2px.png 2x">
+                  <!-- 1x: 80px; 2x: 160px-->
+                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/photo-client-1-tablet@1px.png 1x, img/photo-client-1-desktop@2px.png 2x">
+
+                  <img src="img/photo-client-1-desktop@1px.png" srcset="img/photo-client-1-desktop@2px.png 2x" alt="Фотография клиента" width="80" height="80">
+                </picture>
                 <aside class="comments__wrap">
                   <span>Анна Орлова</span>
                   <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто,
@@ -470,7 +591,18 @@
             </div>
             <div class="comments__item" tabindex="0">
               <aside class="comments__slider-item">
-                <img src="img/photo-client-1-desktop@1px.png" alt="Фотография клиента" width="80" height="80">
+                <picture>
+                  <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/photo-client-1-mobile@1x.webp 1x, img/photo-client-1-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px) and (max-width: 1199px)" srcset="img/photo-client-1-tablet@1x.webp 1x, img/photo-client-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-client-1-desktop@1x.webp 1x, img/photo-client-1-desktop@2x.webp 2x">
+
+                  <!-- 1x: 68px; 2x: 136px-->
+                  <source media="(min-width: 320px) and (max-width: 767px)" srcset="img/photo-client-1-mobile@1px.png 1x, img/photo-client-1-mobile@2px.png 2x">
+                  <!-- 1x: 80px; 2x: 160px-->
+                  <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/photo-client-1-tablet@1px.png 1x, img/photo-client-1-desktop@2px.png 2x">
+
+                  <img src="img/photo-client-1-desktop@1px.png" srcset="img/photo-client-1-desktop@2px.png 2x" alt="Фотография клиента" width="80" height="80">
+                </picture>
                 <aside class="comments__wrap">
                   <span>Анна Орлова</span>
                   <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто,

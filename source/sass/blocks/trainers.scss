@@ -119,8 +119,10 @@
   justify-content: space-between;
 }
 
-.slider .slick-active:not(:first-child) {
-  margin-left: 12px;
+@media (min-width: $desktop-width) {
+  .slider .slick-active:not(:first-child) {
+    margin-left: 12px;
+  }
 }
 
 .slider .slick-arrow {
@@ -191,10 +193,6 @@
 
   .slider__overlay {
     width: 277px;
-  }
-
-  .slider .slick-active:not(:first-child) {
-    margin-left: 0;
   }
 
   .slider .slick-active:nth-child(odd) {
