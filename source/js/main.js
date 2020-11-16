@@ -67,3 +67,5 @@ for (var i = 0; i < linkNav.length; i++) {
     }
   }, false);
 }
+
+$('input[type=tel]').mask('+ 7 (999) 999-9999');
