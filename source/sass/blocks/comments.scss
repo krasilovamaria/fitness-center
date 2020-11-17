@@ -1,6 +1,6 @@
 .comments {
   width: 100%;
-  // background-color: $color-white;
+  background-color: $color-white;
 }
 
 .comments__container {
@@ -38,7 +38,7 @@
   width: 560px;
   display: flex;
   color: $color-white;
-  // background-color: $color-bg-blue;
+  background-color: $color-bg-blue;
 
   img {
     margin-top: 5px;
@@ -184,9 +184,15 @@
     display: flex;
     flex-direction: column;
 
+    picture {
+      margin-left: 25px;
+      width: 68px;
+      height: 68px;
+    }
+
     img {
       margin: 0;
-      margin-left: 25px;
+      margin-left: 0;
       width: 68px;
       height: 68px;
     }
@@ -194,13 +200,14 @@
 
   .comments__wrap {
     span {
-      margin-top: -64px;
-      margin-left: 105px;
+      margin-top: -72px;
+      margin-left: 110px;
       margin-bottom: 20px;
       width: 65px;
     }
 
     p {
+      margin-top: -10px;
       margin-left: 10px;
       text-align: center;
       width: 176px;
