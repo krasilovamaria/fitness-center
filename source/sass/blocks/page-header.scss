@@ -52,6 +52,17 @@
   }
 }
 
+.page-header__phone {
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-header__container-about {
   display: flex;
   justify-content: space-between;
