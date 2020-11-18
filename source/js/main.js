@@ -69,3 +69,18 @@ for (var i = 0; i < linkNav.length; i++) {
 }
 
 $('input[type=tel]').mask('+ 7 (999) 999-9999');
+
+var button = document.querySelectorAll('.cards__button');
+var card = document.querySelectorAll('.cards__card');
+var link = document.querySelectorAll('.cards__link');
+
+for (var k = 0; k < button.length; k++) {
+  button[k].addEventListener('click', function () {
+    for (var l = 0; l < button.length; l++) {
+      card[l].classList.remove('cards__active');
+      link[l].classList.remove('cards__link-active');
+    }
+    card[k].classList.toggle('cards__active');
+    link[k].classList.toggle('cards__link-active');
+  });
+}

@@ -92,35 +92,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  li {
-    position: relative;
-    width: 31%;
-    height: 448px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 64px;
-    text-align: center;
-    background-color: $color-white;
-    outline-style: none;
-
-    &:hover,
-    &:focus {
-      background-image: url("../img/border-card-desktop@1px.png");
-      background-repeat: no-repeat;
-    }
-  }
-
-  li:hover > a,
-  li:focus > a {
-    padding: 25px 0;
-    color: $color-white;
-    border: none;
-    background-color: $color-red;
-    background-image: url("../img/button-cards-desktop@1px.png");
-  }
-
   h3 {
     margin: 0;
     margin-bottom: 10px;
@@ -137,23 +108,6 @@
     font-size: 16px;
     line-height: 24px;
     color: $color-light-blue;
-  }
-
-  a {
-    display: inline-block;
-    vertical-align: middle;
-    width: 205px;
-    height: 65px;
-    padding: 24px 0;
-    text-align: center;
-    font-family: $font-roboto-bold;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 2px solid $color-dark-blue;
-    cursor: pointer;
   }
 
   span {
@@ -180,6 +134,65 @@
       }
     }
   }
+}
+
+.cards__card {
+  position: relative;
+  width: 31%;
+  height: 448px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  text-align: center;
+  background-color: $color-white;
+  outline-style: none;
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/border-card-desktop@1px.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.cards__card:hover > a,
+.cards__card:focus > a {
+  padding: 25px 0;
+  color: $color-white;
+  border: none;
+  background-color: $color-red;
+  background-image: url("../img/button-cards-desktop@1px.png");
+}
+
+.cards__active {
+  background-image: url("../img/border-card-desktop@1px.png");
+  background-repeat: no-repeat;
+}
+
+.cards__link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 205px;
+  height: 65px;
+  padding: 24px 0;
+  text-align: center;
+  font-family: $font-roboto-bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid $color-dark-blue;
+  cursor: pointer;
+}
+
+.cards__link-active {
+  padding: 25px 0;
+  color: $color-white;
+  border: none;
+  background-color: $color-red;
+  background-image: url("../img/button-cards-desktop@1px.png");
 }
 
 .cards__item {
