@@ -147,7 +147,7 @@
 
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .promo__container {
-    max-width: 100%;
+    margin: 0 auto;
     padding: 20px 45px;
     padding-top: 100px;
 
@@ -156,27 +156,22 @@
       font-size: 42px;
       line-height: 42px;
     }
-
-    a {
-      width: 68px;
-    }
   }
 
   .promo__wrapper {
-    width: 100%;
+    width: 680px;
     height: 100%;
+    margin: 0 auto;
     flex-direction: column;
   }
 
   .promo__wrap-img-and-text {
-    width: 100%;
     height: 462px;
     margin-bottom: 30px;
   }
 
   .promo__card {
     padding: 35px 45px;
-    width: 100%;
 
     .promo__card-text {
       min-width: 189px;
@@ -193,7 +188,7 @@
   }
 
   .promo__list {
-    width: 100%;
+    width: 678px;
     flex-direction: row;
     justify-content: space-between;
 
@@ -219,6 +214,10 @@
     li:not(:first-child) p {
       margin-bottom: 10px;
       width: 100%;
+    }
+
+    a {
+      width: 68px;
     }
   }
 }

@@ -150,14 +150,19 @@
     }
   }
 
+  .comments__container .slick-slider {
+    width: 560px;
+    margin: 0 auto;
+  }
+
   .comments__slider .slick-prev {
-    top: 41%;
-    left: 0.5%;
+    top: 43%;
+    left: -9.5%;
   }
 
   .comments__slider .slick-next {
-    top: 41%;
-    right: 0.5%;
+    top: 43%;
+    right: -9.5%;
   }
 }
 
@@ -215,6 +220,11 @@
     }
   }
 
+  .comments__container .slick-slider {
+    width: 260px;
+    margin: 0 auto;
+  }
+
   .comments__slider .slick-track {
     height: 335px;
   }
@@ -230,12 +240,12 @@
   .comments__slider .slick-prev {
     width: 15px;
     height: 15px;
-    left: 0.5%;
+    left: -4.5%;
   }
 
   .comments__slider .slick-next {
     width: 15px;
     height: 15px;
-    right: 0.5%;
+    right: -4.5%;
   }
 }

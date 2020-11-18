@@ -162,6 +162,16 @@
   transform: rotate(45deg);
 }
 
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .slider .slick-prev {
+    left: -1.2%;
+  }
+
+  .slider .slick-next {
+    right: -1.2%;
+  }
+}
+
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .trainers__container {
     max-width: 100%;
