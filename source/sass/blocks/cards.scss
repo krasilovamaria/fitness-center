@@ -287,28 +287,37 @@
     justify-content: center;
     align-items: center;
 
-    li {
-      width: 442px;
-      margin-bottom: 40px;
-      padding-top: 64px;
-
-      &:hover,
-      &:focus {
-        background-image: url("../img/border-card-tablet@1px.png");
-        background-position: 10% 10%;
-      }
-    }
-
-    li:hover > a,
-    li:focus > a {
-      background-color: $color-red;
-      background-image: url("../img/button-cards-tablet@1px.png");
-    }
-
     span::before {
       top: 215px;
       right: 138px;
     }
+  }
+
+  .cards__card {
+    width: 442px;
+    margin-bottom: 40px;
+    padding-top: 64px;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/border-card-tablet@1px.png");
+      background-position: 10% 10%;
+    }
+  }
+
+  .cards__card:hover > a,
+  .cards__card:focus > a {
+    background-color: $color-red;
+    background-image: url("../img/button-cards-tablet@1px.png");
+  }
+
+  .cards__active {
+    background-image: url("../img/border-card-tablet@1px.png");
+    background-position: 10% 10%;
+  }
+
+  .cards__link-active {
+    background-image: url("../img/button-cards-tablet@1px.png");
   }
 }
 
@@ -351,25 +360,6 @@
     justify-content: center;
     align-items: center;
 
-    li {
-      width: 290px;
-      height: 384px;
-      margin-bottom: 35px;
-      padding-top: 40px;
-      outline-style: none;
-
-      &:hover,
-      &:focus {
-        background-image: url("../img/border-card-mobile@1px.png");
-      }
-    }
-
-    li:hover > a,
-    li:focus > a {
-      background-color: $color-red;
-      background-image: url("../img/button-cards-mobile@1px.png");
-    }
-
     h3 {
       margin: 0;
       margin-bottom: 8px;
@@ -398,6 +388,33 @@
         background-image: url("../img/ruble-mobile.png");
       }
     }
+  }
+
+  .cards__card {
+    width: 290px;
+    height: 384px;
+    margin-bottom: 35px;
+    padding-top: 40px;
+    outline-style: none;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/border-card-mobile@1px.png");
+    }
+  }
+
+  .cards__card:hover > a,
+  .cards__card:focus > a {
+    background-color: $color-red;
+    background-image: url("../img/button-cards-mobile@1px.png");
+  }
+
+  .cards__active {
+    background-image: url("../img/border-card-mobile@1px.png");
+  }
+
+  .cards__link-active {
+    background-image: url("../img/button-cards-mobile@1px.png");
   }
 
   .cards__with-trainer {
