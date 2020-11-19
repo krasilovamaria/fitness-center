@@ -42,6 +42,8 @@ $(document).ready(function () {
   }
 });
 
+/* Плавный скролл */
+
 var linkNav = document.querySelectorAll('[href^="#"]');
 var rate = 0.5;
 for (var i = 0; i < linkNav.length; i++) {
@@ -68,19 +70,45 @@ for (var i = 0; i < linkNav.length; i++) {
   }, false);
 }
 
+/* Маска для формы */
+
 $('input[type=tel]').mask('+ 7 (999) 999-9999');
 
-var button = document.querySelectorAll('.cards__button');
-var card = document.querySelectorAll('.cards__card');
-var link = document.querySelectorAll('.cards__link');
+/* Переключение контента в карточках */
 
-for (var k = 0; k < button.length; k++) {
-  button[k].addEventListener('click', function () {
-    for (var l = 0; l < button.length; l++) {
-      card[l].classList.remove('cards__active');
-      link[l].classList.remove('cards__link-active');
-    }
-    card[k].classList.toggle('cards__active');
-    link[k].classList.toggle('cards__link-active');
-  });
+var button = document.querySelectorAll('.cards__button');
+var span = document.querySelectorAll('.cards__price');
+var arrRubles = [];
+
+for (var k = 0; k < span.length; k++) {
+  var rubles = span[k].textContent;
+  arrRubles.push(rubles);
 }
+
+Object.keys(button).forEach(function (index) {
+  button[index].addEventListener('click', function () {
+
+    for (var l = 0; l < span.length; l++) {
+      var buttonText = button[index].textContent;
+      var numberOfMonths = parseInt(buttonText.replace(/[^\d]/g, ''), 10);
+
+      span[l].innerHTML = numberOfMonths * arrRubles[l];
+    }
+  });
+});
+
+/* Удаляет активный класс карточки при tab */
+
+var cardActive = document.querySelectorAll('.cards__card');
+var spanActive = document.querySelectorAll('.cards__link');
+
+document.addEventListener('keydown', function (event) {
+  if (event.keyCode === 9) {
+    for (var n = 0; n < cardActive.length; n++) {
+      if (cardActive[n].classList.contains('cards__card--active')) {
+        cardActive[n].classList.remove('cards__card--active');
+        spanActive[n].classList.remove('cards__link--active');
+      }
+    }
+  }
+});

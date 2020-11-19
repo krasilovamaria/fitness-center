@@ -62,25 +62,31 @@
       background-color: $color-border;
     }
   }
+}
 
-  button {
-    @include button-reset;
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-    padding-bottom: 12px;
-    color: $color-font-light-blue;
-    font-size: 20px;
-    line-height: 30px;
-    outline: none;
+.cards__button {
+  @include button-reset;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  padding-bottom: 12px;
+  color: $color-font-light-blue;
+  font-size: 20px;
+  line-height: 30px;
+  outline: none;
 
-    &:hover,
-    &:focus {
-      padding-bottom: 10px;
-      color: $color-dark-blue;
-      border-bottom: 2px solid $color-border-hover;
-    }
+  &:hover,
+  &:focus {
+    padding-bottom: 10px;
+    color: $color-dark-blue;
+    border-bottom: 2px solid $color-border-hover;
   }
+}
+
+.cards__button--active {
+  padding-bottom: 10px;
+  color: $color-dark-blue;
+  border-bottom: 2px solid $color-border-hover;
 }
 
 .cards__wrapper {
@@ -165,7 +171,7 @@
   background-image: url("../img/button-cards-desktop@1px.png");
 }
 
-.cards__active {
+.cards__card--active {
   background-image: url("../img/border-card-desktop@1px.png");
   background-repeat: no-repeat;
 }
@@ -187,7 +193,7 @@
   cursor: pointer;
 }
 
-.cards__link-active {
+.cards__link--active {
   padding: 25px 0;
   color: $color-white;
   border: none;
@@ -274,12 +280,12 @@
         width: 332px;
       }
     }
+  }
 
-    button {
-      height: 44px;
-      font-size: 18px;
-      line-height: 27px;
-    }
+  .cards__button {
+    height: 44px;
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .cards__wrapper {
@@ -311,12 +317,12 @@
     background-image: url("../img/button-cards-tablet@1px.png");
   }
 
-  .cards__active {
+  .cards__card--active {
     background-image: url("../img/border-card-tablet@1px.png");
     background-position: 10% 10%;
   }
 
-  .cards__link-active {
+  .cards__link--active {
     background-image: url("../img/button-cards-tablet@1px.png");
   }
 }
@@ -347,12 +353,12 @@
         width: 290px;
       }
     }
+  }
 
-    button {
-      height: 44px;
-      font-size: 16px;
-      line-height: 24px;
-    }
+  .cards__button {
+    height: 44px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .cards__wrapper {
@@ -409,11 +415,11 @@
     background-image: url("../img/button-cards-mobile@1px.png");
   }
 
-  .cards__active {
+  .cards__card--active {
     background-image: url("../img/border-card-mobile@1px.png");
   }
 
-  .cards__link-active {
+  .cards__link--active {
     background-image: url("../img/button-cards-mobile@1px.png");
   }
 
