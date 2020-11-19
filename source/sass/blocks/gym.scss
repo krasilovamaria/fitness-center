@@ -299,3 +299,24 @@
     }
   }
 }
+
+@media (min-width: 340px) and (max-width: $mobile-width-max) {
+  .gym__wrapper-text {
+    align-items: center;
+
+    h2 {
+      text-align: center;
+    }
+
+    .gym__head {
+      text-align: center;
+    }
+
+    .gym__text {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}

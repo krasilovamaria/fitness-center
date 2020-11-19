@@ -264,6 +264,7 @@ form {
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .contact {
     flex-direction: column;
+    margin: 0 auto;
   }
 
   .contact__form-wrap {
@@ -274,7 +275,7 @@ form {
     margin: 0 auto;
     padding: 70px 15px 69px;
     padding-bottom: 50px;
-    width: 100%;
+    width: 290px;
 
     h2 {
       margin-bottom: 38px;
@@ -289,7 +290,7 @@ form {
     }
 
     input {
-      width: 100%;
+      width: 260px;
       margin-bottom: 33px;
       border-radius: 0;
       appearance: none;

@@ -315,8 +315,13 @@
     }
   }
 
-  .page-header__wrapper-text {
+  .page-header__container-about {
     width: 100%;
+    justify-content: center;
+  }
+
+  .page-header__wrapper-text {
+    width: 290px;
     padding-top: 50px;
 
     p {
