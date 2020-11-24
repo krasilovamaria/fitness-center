@@ -240,6 +240,14 @@
   }
 }
 
+.cards__content {
+  display: none;
+}
+
+.cards__content--active {
+  display: block;
+}
+
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .cards::before {
     position: absolute;

@@ -76,24 +76,19 @@ $('input[type=tel]').mask('+ 7 (999) 999-9999');
 
 /* Переключение контента в карточках */
 
-var button = document.querySelectorAll('.cards__button');
-var span = document.querySelectorAll('.cards__price');
-var arrRubles = [];
+var tabBtn = document.querySelectorAll('.cards__button');
+var tabContent = document.querySelectorAll('.cards__content');
 
-for (var k = 0; k < span.length; k++) {
-  var rubles = span[k].textContent;
-  arrRubles.push(rubles);
-}
+Object.keys(tabBtn).forEach(function (index) {
+  tabBtn[index].addEventListener('click', function (ev) {
 
-Object.keys(button).forEach(function (index) {
-  button[index].addEventListener('click', function () {
-
-    for (var l = 0; l < span.length; l++) {
-      var buttonText = button[index].textContent;
-      var numberOfMonths = parseInt(buttonText.replace(/[^\d]/g, ''), 10);
-
-      span[l].innerHTML = numberOfMonths * arrRubles[l];
+    for (var l = 0; l < tabBtn.length; l++) {
+      tabBtn[l].classList.remove('cards__button--active');
+      tabContent[l].classList.remove('cards__content--active');
     }
+
+    ev.target.classList.add('cards__button--active');
+    tabContent[index].classList.add('cards__content--active');
   });
 });
 
