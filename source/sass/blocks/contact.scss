@@ -366,7 +366,7 @@ form {
   }
 }
 
-@media (min-width: 321px) and (max-width: $tablet-width-min) {
+@media (min-width: 321px) and (max-width: 767px) {
   .contact__contacts-wrap {
     .contacts {
       width: 300px;
