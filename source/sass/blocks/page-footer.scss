@@ -151,6 +151,10 @@
       line-height: 18px;
     }
 
+    a:not(:first-child):not(:nth-child(2)) {
+      width: 100px;
+    }
+
     a:first-child {
       margin-top: 40px;
       margin-right: 10px;
