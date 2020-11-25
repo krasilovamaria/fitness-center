@@ -163,12 +163,17 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1300px) {
+  .slider {
+    margin: 0 auto;
+    width: 1100px;
+  }
+
   .slider .slick-prev {
-    left: -1.2%;
+    left: -2.2%;
   }
 
   .slider .slick-next {
-    right: -1.2%;
+    right: -2.2%;
   }
 }
 
